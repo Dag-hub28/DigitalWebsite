@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pricing | Digital Website Ltd</title>
+<meta name="description" content="See what a website, mobile app or business software from Digital Website Ltd costs, and message us for an exact quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+nav.links a[aria-current="page"]{color:var(--ink)}
+
+.page-head{padding:72px 0 56px}
+.page-head h1{font-size:clamp(2.3rem,5vw,3.8rem);font-weight:800;max-width:15em}
+.page-head p{font-size:1.2rem;color:var(--muted);max-width:34em;margin-top:22px}
+
+.band{background:var(--paper);border-block:1px solid var(--line)}
+
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.plan{background:var(--bg);border:1px solid var(--line);border-radius:20px;padding:30px;display:flex;flex-direction:column}
+.plan h3{font-size:1.45rem;font-weight:700}
+.plan .for{color:var(--muted);margin-top:6px;font-size:.98rem}
+.plan .price{font:800 2.3rem var(--display);letter-spacing:-.02em;margin:22px 0 4px}
+.plan .price small{display:block;font:500 .9rem var(--body);color:var(--muted);letter-spacing:0;margin-bottom:2px}
+.plan ul{list-style:none;display:grid;gap:9px;margin:20px 0 28px;flex:1;font-size:.98rem}
+.plan li::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--sun);margin-right:10px}
+
+.factors{display:grid;grid-template-columns:repeat(2,1fr);gap:0 56px;border-top:2px solid var(--ink)}
+.factor{padding:24px 0;border-bottom:1px solid var(--line)}
+.factor h3{font-size:1.25rem;font-weight:700;margin-bottom:6px}
+.factor p{color:var(--muted)}
+
+.faq{max-width:760px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-of-type{border-top:2px solid var(--ink)}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 0;font:700 1.15rem var(--display);letter-spacing:-.01em}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.6rem;line-height:1;color:var(--cobalt);flex:none}
+.faq details[open] summary::after{content:"\2013"}
+.faq details p{color:var(--muted);padding:0 40px 22px 0}
+
+.cta-band{background:var(--ink);color:#fff}
+.cta-band .wrap{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap}
+.cta-band h2{font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:800;max-width:16em}
+.cta-band p{color:#B4BAD4;margin-top:10px}
+.cta-actions{display:flex;gap:12px;flex-wrap:wrap}
+.cta-band .btn-ghost{border-color:#fff;color:#fff}
+.cta-band .btn-ghost:hover{background:#fff;color:var(--ink)}
+
+@media (max-width:900px){
+  .plans{grid-template-columns:1fr}
+}
+@media (max-width:700px){
+  .factors{grid-template-columns:1fr}
+  .page-head{padding:44px 0 36px}
+  .faq details p{padding-right:0}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Digital Website Ltd home"><span class="logo-mark"></span>Digital Website Ltd</a>
+    <nav class="links" aria-label="Main">
+      <a href="index.html#work">Our work</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#process">How it works</a>
+      <a href="about.html">About</a>
+      <a href="pricing.html" aria-current="page">Pricing</a>
+      <a class="btn btn-primary btn-sm" href="index.html#request">Request a project</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<div class="page-head">
+  <div class="wrap">
+    <h1>Clear prices, agreed before we start.</h1>
+    <p>These are starting prices. Every project is a little different, so message us what you need and we will send an exact price and delivery date.</p>
+  </div>
+</div>
+
+<section class="band">
+  <div class="wrap">
+    <!-- EDIT: change every price, and change the list items so they match exactly what you offer. -->
+    <div class="plans">
+      <div class="plan">
+        <h3>Website</h3>
+        <p class="for">For businesses that need a professional home online.</p>
+        <div class="price"><small>From</small>KSh XX,XXX</div>
+        <ul>
+          <li>Design that works on phones and computers</li>
+          <li>WhatsApp and contact buttons</li>
+          <li>Help getting it online</li>
+          <li>Training on how to update it</li>
+        </ul>
+        <a class="btn btn-primary" href="#" data-wa="Hello Digital Website Ltd, I would like a price for a website.">Ask for a website quote</a>
+      </div>
+      <div class="plan">
+        <h3>Mobile app</h3>
+        <p class="for">For businesses whose customers should order, book or pay from a phone.</p>
+        <div class="price"><small>From</small>KSh XX,XXX</div>
+        <ul>
+          <li>Android and iPhone</li>
+          <li>Customer accounts</li>
+          <li>M-Pesa and card payments</li>
+          <li>Support after launch</li>
+        </ul>
+        <a class="btn btn-primary" href="#" data-wa="Hello Digital Website Ltd, I would like a price for a mobile app.">Ask for an app quote</a>
+      </div>
+      <div class="plan">
+        <h3>Business software</h3>
+        <p class="for">For teams that want to replace spreadsheets and paperwork.</p>
+        <div class="price"><small>From</small>KSh XX,XXX</div>
+        <ul>
+          <li>A system built around how you work</li>
+          <li>Reports and dashboards</li>
+          <li>Staff logins and permissions</li>
+          <li>Support after launch</li>
+        </ul>
+        <a class="btn btn-primary" href="#" data-wa="Hello Digital Website Ltd, I would like a price for business software.">Ask for a software quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>What changes the price</h2>
+      <p>Four things decide the final number, and we go through each one with you.</p>
+    </div>
+    <div class="factors">
+      <div class="factor">
+        <h3>Size</h3>
+        <p>The number of pages or screens you need.</p>
+      </div>
+      <div class="factor">
+        <h3>Features</h3>
+        <p>Extras such as payments, customer accounts, booking or reports.</p>
+      </div>
+      <div class="factor">
+        <h3>Design</h3>
+        <p>How much is designed from scratch to match your brand.</p>
+      </div>
+      <div class="factor">
+        <h3>Deadline</h3>
+        <p>How soon you need it live.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Questions people ask</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>How do I get an exact price?</summary>
+        <p>Message us what you need. Before any work starts, we send you a clear scope, price and delivery date.</p>
+      </details>
+      <details>
+        <summary>Can you build something like a project I saw on your site?</summary>
+        <p>Yes. Tap "Request something like this" on that project in our work section, and we will start the conversation from there.</p>
+      </details>
+      <details>
+        <summary>How long does a project take?</summary>
+        <p>It depends on the size. Your delivery date is part of the plan we agree with you before we begin.</p>
+      </details>
+      <details>
+        <summary>What happens after my project goes live?</summary>
+        <p>We stay on hand to fix problems and add the features you need next.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <div>
+      <h2>Ready for your exact price?</h2>
+      <p>Tell us what you need and we will reply with next steps.</p>
+    </div>
+    <div class="cta-actions">
+      <a class="btn btn-primary" href="#" data-wa="Hello Digital Website Ltd, I would like a price for a project.">Message us on WhatsApp</a>
+      <a class="btn btn-ghost" href="index.html#work">Browse our work</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="yr"></span> Digital Website Ltd. All rights reserved.</span>
+    <span>Websites, apps and software.</span>
+  </div>
+</footer>
+
+<a class="wa-float" href="#" data-wa="Hello Digital Website Ltd, I would like a price for a project.">Chat on WhatsApp</a>
+
+<script>
+/* EDIT: use the same WhatsApp number as in index.html (digits only, with country code) */
+const WHATSAPP = "254700000000";
+
+document.addEventListener("click", e => {
+  const el = e.target.closest("[data-wa]");
+  if (!el) return;
+  e.preventDefault();
+  window.open("https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(el.dataset.wa), "_blank", "noopener");
+});
+document.getElementById("yr").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
