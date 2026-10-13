@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About | Digital Website Ltd</title>
+<meta name="description" content="Digital Website Ltd designs and builds websites, mobile apps and business software. Learn how we work and who is behind the work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+nav.links a[aria-current="page"]{color:var(--ink)}
+
+.page-head{padding:72px 0 56px}
+.page-head h1{font-size:clamp(2.3rem,5vw,3.8rem);font-weight:800;max-width:15em}
+.page-head p{font-size:1.2rem;color:var(--muted);max-width:34em;margin-top:22px}
+
+.about-body{background:var(--paper);border-block:1px solid var(--line)}
+.principles{display:grid;grid-template-columns:repeat(2,1fr);gap:0 56px;border-top:2px solid var(--ink)}
+.principle{padding:26px 0;border-bottom:1px solid var(--line)}
+.principle h3{font-size:1.3rem;margin-bottom:8px;font-weight:700}
+.principle p{color:var(--muted)}
+
+.team{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:24px}
+.person{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.avatar{width:64px;height:64px;border-radius:50%;background:var(--cobalt);color:#fff;display:grid;place-items:center;font:800 1.3rem var(--display);position:relative;margin-bottom:16px}
+.avatar::after{content:"";position:absolute;width:12px;height:12px;border-radius:50%;background:var(--sun);right:2px;bottom:2px;border:2px solid var(--bg)}
+.person h3{font-size:1.15rem;font-weight:700}
+.person .role{color:var(--cobalt);font-weight:600;font-size:.92rem}
+.person p{color:var(--muted);margin-top:8px;font-size:.96rem}
+
+.cta-band{background:var(--ink);color:#fff}
+.cta-band .wrap{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap}
+.cta-band h2{font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:800;max-width:16em}
+.cta-band p{color:#B4BAD4;margin-top:10px}
+.cta-actions{display:flex;gap:12px;flex-wrap:wrap}
+.cta-band .btn-ghost{border-color:#fff;color:#fff}
+.cta-band .btn-ghost:hover{background:#fff;color:var(--ink)}
+
+@media (max-width:700px){
+  .principles{grid-template-columns:1fr}
+  .page-head{padding:44px 0 36px}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Digital Website Ltd home"><span class="logo-mark"></span>Digital Website Ltd</a>
+    <nav class="links" aria-label="Main">
+      <a href="index.html#work">Our work</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#process">How it works</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a class="btn btn-primary btn-sm" href="index.html#request">Request a project</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<div class="page-head">
+  <div class="wrap">
+    <h1>We build what your business runs on.</h1>
+    <p>Digital Website Ltd designs and builds websites, mobile apps and business software. You tell us the problem, and we deliver something that works on your customers' phones and in your team's daily routine.</p>
+  </div>
+</div>
+
+<section class="about-body">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>How we work</h2>
+      <p>Four promises we keep on every project, big or small.</p>
+    </div>
+    <div class="principles">
+      <div class="principle">
+        <h3>You know the price first</h3>
+        <p>Before any work starts, you get a clear scope, a price and a delivery date in writing.</p>
+      </div>
+      <div class="principle">
+        <h3>You see progress as it happens</h3>
+        <p>We show you the work while we build it, so changes happen early and nothing is a surprise at the end.</p>
+      </div>
+      <div class="principle">
+        <h3>We explain things plainly</h3>
+        <p>No jargon. If you can use WhatsApp, you can talk to us about your project.</p>
+      </div>
+      <div class="principle">
+        <h3>We stay after launch</h3>
+        <p>When your project goes live, we remain on hand to fix problems and add what you need next.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>The people behind the work</h2>
+      <p>The team you will be talking to when you message us.</p>
+    </div>
+    <!-- EDIT: change the initials, names, roles and sentences below. Copy a whole <div class="person"> block to add more people, or delete one to remove it. -->
+    <div class="team">
+      <div class="person">
+        <div class="avatar">AB</div>
+        <h3>Your name</h3>
+        <span class="role">Founder</span>
+        <p>One sentence about what this person does and what they are good at.</p>
+      </div>
+      <div class="person">
+        <div class="avatar">CD</div>
+        <h3>Team member name</h3>
+        <span class="role">Web developer</span>
+        <p>One sentence about what this person does and what they are good at.</p>
+      </div>
+      <div class="person">
+        <div class="avatar">EF</div>
+        <h3>Team member name</h3>
+        <span class="role">App developer</span>
+        <p>One sentence about what this person does and what they are good at.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <div>
+      <h2>Have something in mind?</h2>
+      <p>Tell us what you need and we will reply with next steps.</p>
+    </div>
+    <div class="cta-actions">
+      <a class="btn btn-primary" href="#" data-wa="Hello Digital Website Ltd, I would like to talk about a project.">Message us on WhatsApp</a>
+      <a class="btn btn-ghost" href="index.html#work">Browse our work</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="yr"></span> Digital Website Ltd. All rights reserved.</span>
+    <span>Websites, apps and software.</span>
+  </div>
+</footer>
+
+<a class="wa-float" href="#" data-wa="Hello Digital Website Ltd, I would like to talk about a project.">Chat on WhatsApp</a>
+
+<script>
+/* EDIT: use the same WhatsApp number as in index.html (digits only, with country code) */
+const WHATSAPP = "254700000000";
+
+document.addEventListener("click", e => {
+  const el = e.target.closest("[data-wa]");
+  if (!el) return;
+  e.preventDefault();
+  window.open("https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(el.dataset.wa), "_blank", "noopener");
+});
+document.getElementById("yr").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
