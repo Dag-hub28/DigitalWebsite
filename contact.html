@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Digital Website Ltd</title>
+<meta name="description" content="Contact Digital Website Ltd on WhatsApp, by phone or by email, or send a project request from this page.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+nav.links a[aria-current="page"]{color:var(--ink)}
+
+.page-head{padding:72px 0 40px}
+.page-head h1{font-size:clamp(2.3rem,5vw,3.8rem);font-weight:800;max-width:15em}
+.page-head p{font-size:1.2rem;color:var(--muted);max-width:34em;margin-top:22px}
+
+.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:start}
+.channels{list-style:none;border-top:2px solid var(--ink)}
+.channel{padding:20px 0;border-bottom:1px solid var(--line)}
+.channel .label{display:block;color:var(--muted);font-size:.92rem}
+.channel a,.channel .value{font:700 1.2rem var(--display);letter-spacing:-.01em;text-decoration:none;overflow-wrap:anywhere}
+.channel a:hover{color:var(--cobalt)}
+.channel .note{display:block;color:var(--muted);font-size:.95rem;margin-top:2px}
+.ok{color:#17653F;font-weight:500;font-size:.95rem;min-height:1.2em}
+
+@media (max-width:900px){
+  .contact-grid{grid-template-columns:1fr}
+}
+@media (max-width:700px){
+  .page-head{padding:44px 0 24px}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Digital Website Ltd home"><span class="logo-mark"></span>Digital Website Ltd</a>
+    <nav class="links" aria-label="Main">
+      <a href="index.html#work">Our work</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#process">How it works</a>
+      <a href="about.html">About</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <a class="btn btn-primary btn-sm" href="index.html#request">Request a project</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<div class="page-head">
+  <div class="wrap">
+    <h1>Let's talk about your project.</h1>
+    <p>Pick the way that suits you. Message us on WhatsApp, call, email, or fill in the form and we will pick it up from there.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap contact-grid">
+
+    <ul class="channels">
+      <li class="channel">
+        <span class="label">WhatsApp</span>
+        <a id="c-wa" href="#" target="_blank" rel="noopener"></a>
+        <span class="note">Best for quick questions and sending us project details.</span>
+      </li>
+      <li class="channel">
+        <span class="label">Phone</span>
+        <a id="c-tel" href="#"></a>
+        <span class="note">Call us to talk it through.</span>
+      </li>
+      <li class="channel">
+        <span class="label">Email</span>
+        <a id="c-mail" href="#"></a>
+      </li>
+      <li class="channel">
+        <span class="label">Where we are</span>
+        <span class="value" id="c-loc"></span>
+      </li>
+      <li class="channel">
+        <span class="label">Working hours</span>
+        <span class="value" id="c-hours"></span>
+      </li>
+    </ul>
+
+    <form class="req" id="req-form" novalidate>
+      <label>Your name
+        <input id="f-name" name="name" autocomplete="name" required>
+      </label>
+      <label>What do you need?
+        <select id="f-type">
+          <option>A website</option>
+          <option>A mobile app</option>
+          <option>Business software</option>
+          <option>Something else</option>
+        </select>
+      </label>
+      <label>Tell us about it
+        <textarea id="f-msg" placeholder="What does your business do, and what should this project help you with?"></textarea>
+      </label>
+      <div class="err" id="f-err" role="alert"></div>
+      <button class="btn btn-primary" type="submit">Send on WhatsApp</button>
+      <p class="ok" id="f-ok" role="status"></p>
+      <p class="hint">This opens WhatsApp on your phone or computer. You press send there.</p>
+    </form>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="yr"></span> Digital Website Ltd. All rights reserved.</span>
+    <span>Websites, apps and software.</span>
+  </div>
+</footer>
+
+<script>
+/* EDIT: put your real details here. Use the same WhatsApp number as in index.html. */
+const SITE = {
+  whatsapp: "254700000000",            // digits only, with country code, no + or spaces
+  display: "+254 700 000 000",         // how the number is shown on the page
+  email: "hello@digitalwebsite.co.ke",
+  location: "Nairobi, Kenya",
+  hours: "Monday to Friday, 8:00 am to 6:00 pm"
+};
+
+const waLink = msg => "https://wa.me/" + SITE.whatsapp + "?text=" + encodeURIComponent(msg);
+
+document.getElementById("c-wa").href = waLink("Hello Digital Website Ltd, I would like to talk about a project.");
+document.getElementById("c-wa").textContent = SITE.display;
+document.getElementById("c-tel").href = "tel:+" + SITE.whatsapp;
+document.getElementById("c-tel").textContent = SITE.display;
+document.getElementById("c-mail").href = "mailto:" + SITE.email;
+document.getElementById("c-mail").textContent = SITE.email;
+document.getElementById("c-loc").textContent = SITE.location;
+document.getElementById("c-hours").textContent = SITE.hours;
+document.getElementById("yr").textContent = new Date().getFullYear();
+
+document.getElementById("req-form").addEventListener("submit", e => {
+  e.preventDefault();
+  const name = document.getElementById("f-name").value.trim();
+  const msg = document.getElementById("f-msg").value.trim();
+  const err = document.getElementById("f-err");
+  const ok = document.getElementById("f-ok");
+  ok.textContent = "";
+  if (!name) { err.textContent = "Enter your name so we know who to reply to."; document.getElementById("f-name").focus(); return; }
+  if (!msg) { err.textContent = "Add a few words about what you need."; document.getElementById("f-msg").focus(); return; }
+  err.textContent = "";
+  const type = document.getElementById("f-type").value;
+  const text = "Hello Digital Website Ltd, my name is " + name + ".\nI need: " + type + ".\n\n" + msg;
+  window.open(waLink(text), "_blank", "noopener");
+  ok.textContent = "WhatsApp should have opened with your message. Press send there to reach us.";
+});
+</script>
+</body>
+</html>
