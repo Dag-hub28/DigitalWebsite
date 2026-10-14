@@ -188,9 +188,13 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
   .stack .mock{animation:none}
   *{transition:none!important}
 }
+
 /* ---- Phone fixes ---- */
 nav.links a.btn-primary,nav.links a.btn-primary:hover{color:#fff}
 .logo{line-height:1.15}
+.foot-links{display:flex;gap:20px;flex-wrap:wrap}
+.foot-links a{text-decoration:none;font-weight:500}
+.foot-links a:hover{color:var(--ink)}
 @media (max-width:900px){
   .top .wrap{height:62px}
   .logo{font-size:1rem}
