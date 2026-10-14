@@ -70,6 +70,7 @@ nav.links a[aria-current="page"]{color:var(--ink)}
       <a href="index.html#process">How it works</a>
       <a href="about.html">About</a>
       <a href="pricing.html" aria-current="page">Pricing</a>
+      <a href="contact.html">Contact</a>
       <a class="btn btn-primary btn-sm" href="index.html#request">Request a project</a>
     </nav>
   </div>
@@ -86,12 +87,11 @@ nav.links a[aria-current="page"]{color:var(--ink)}
 
 <section class="band">
   <div class="wrap">
-    <!-- EDIT: change every price, and change the list items so they match exactly what you offer. -->
     <div class="plans">
       <div class="plan">
         <h3>Website</h3>
         <p class="for">For businesses that need a professional home online.</p>
-        <div class="price"><small>From</small>KSh XX,XXX</div>
+        <div class="price"><small>From</small>KSh 15,000</div>
         <ul>
           <li>Design that works on phones and computers</li>
           <li>WhatsApp and contact buttons</li>
@@ -102,12 +102,12 @@ nav.links a[aria-current="page"]{color:var(--ink)}
       </div>
       <div class="plan">
         <h3>Mobile app</h3>
-        <p class="for">For businesses whose customers should order, book or pay from a phone.</p>
-        <div class="price"><small>From</small>KSh XX,XXX</div>
+        <p class="for">For businesses whose customers or tenants should use an app on their phone.</p>
+        <div class="price"><small>From</small>KSh 80,000</div>
         <ul>
           <li>Android and iPhone</li>
-          <li>Customer accounts</li>
-          <li>M-Pesa and card payments</li>
+          <li>Customer or tenant accounts</li>
+          <li>Notifications and payments</li>
           <li>Support after launch</li>
         </ul>
         <a class="btn btn-primary" href="#" data-wa="Hello Digital Website Ltd, I would like a price for a mobile app.">Ask for an app quote</a>
@@ -115,7 +115,7 @@ nav.links a[aria-current="page"]{color:var(--ink)}
       <div class="plan">
         <h3>Business software</h3>
         <p class="for">For teams that want to replace spreadsheets and paperwork.</p>
-        <div class="price"><small>From</small>KSh XX,XXX</div>
+        <div class="price"><small>From</small>KSh 60,000</div>
         <ul>
           <li>A system built around how you work</li>
           <li>Reports and dashboards</li>
@@ -199,15 +199,19 @@ nav.links a[aria-current="page"]{color:var(--ink)}
 <footer>
   <div class="wrap">
     <span>&copy; <span id="yr"></span> Digital Website Ltd. All rights reserved.</span>
-    <span>Websites, apps and software.</span>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </div>
 </footer>
 
 <a class="wa-float" href="#" data-wa="Hello Digital Website Ltd, I would like a price for a project.">Chat on WhatsApp</a>
 
 <script>
-/* EDIT: use the same WhatsApp number as in index.html (digits only, with country code) */
-const WHATSAPP = "254700000000";
+const WHATSAPP = "254748617268";
 
 document.addEventListener("click", e => {
   const el = e.target.closest("[data-wa]");
