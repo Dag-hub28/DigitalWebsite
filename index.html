@@ -41,7 +41,7 @@
       <div class="facts">
         <div><strong id="count-projects">0</strong>projects delivered</div>
         <div><strong>3</strong>kinds of work: web, mobile, software</div>
-        <div><strong>1 chat</strong>to get started</div>
+        <div><strong>24/7</strong>open for your message</div>
       </div>
     </div>
     <div class="stack" id="hero-stack" aria-hidden="true"></div>
@@ -68,18 +68,18 @@
     <div class="services">
       <div class="service">
         <h3>Websites</h3>
-        <p>Company sites, online shops and booking pages that look sharp on any phone and load fast.</p>
-        <ul><li>Business and portfolio sites</li><li>Online stores with payments</li><li>Booking and enquiry pages</li></ul>
+        <p>Company sites and business pages that look sharp on any phone and load fast.</p>
+        <ul><li>Business and portfolio sites</li><li>Barbershop and salon sites</li><li>Booking and enquiry pages</li></ul>
       </div>
       <div class="service">
         <h3>Mobile apps</h3>
-        <p>Apps your customers install and use every day, for Android and iPhone.</p>
-        <ul><li>Delivery and ordering apps</li><li>Customer accounts and loyalty</li><li>M-Pesa and card payments</li></ul>
+        <p>Apps your customers and tenants install and use every day, for Android and iPhone.</p>
+        <ul><li>Landlord and tenant apps</li><li>Customer accounts</li><li>Notifications and payments</li></ul>
       </div>
       <div class="service">
         <h3>Business software</h3>
         <p>Custom systems that replace spreadsheets and paperwork so your team saves hours each week.</p>
-        <ul><li>Management and booking systems</li><li>Invoicing and reports</li><li>Dashboards for your team</li></ul>
+        <ul><li>Student tracking systems</li><li>WiFi billing systems</li><li>Hostel and property management</li></ul>
       </div>
     </div>
   </div>
@@ -111,6 +111,7 @@
         <li><a id="c-wa" href="#">WhatsApp<small id="c-wa-t"></small></a></li>
         <li><a id="c-mail" href="#">Email<small id="c-mail-t"></small></a></li>
         <li><strong>Location</strong><small id="c-loc"></small></li>
+        <li><strong>Hours</strong><small>Open 24 hours, 7 days a week</small></li>
       </ul>
     </div>
     <form class="req" id="req-form" novalidate>
@@ -143,7 +144,12 @@
 <footer>
   <div class="wrap">
     <span>&copy; <span id="yr"></span> Digital Website Ltd. All rights reserved.</span>
-    <span>Websites, apps and software.</span>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </div>
 </footer>
 
@@ -155,40 +161,37 @@
    ===================================================== */
 const SITE = {
   name: "Digital Website Ltd",
-  whatsapp: "254700000000",          // your number with country code, digits only (no + or spaces)
-  whatsappDisplay: "+254 700 000 000",
-  email: "hello@digitalwebsite.co.ke",
-  location: "Nairobi, Kenya"
+  whatsapp: "254748617268",          // your number with country code, digits only (no + or spaces)
+  whatsappDisplay: "+254 748 617 268",
+  email: "dauglasnyongesa1@gmail.com",
+  location: "Ngong, Kenya"
 };
 
-/* Add one object per finished project.
+/* One object per finished project.
    category: "Websites", "Mobile apps" or "Software"
    type:     "web", "app" or "soft"   (decides the preview drawing)
-   image:    optional. Put a screenshot file in your repo (e.g. "images/shop.jpg") and it replaces the drawing.
+   image:    optional. Upload a screenshot to your repo and add  image:"file-name.jpg"  to replace the drawing.
    url:      optional. Link to the live project; shows a "View live" button.
-   colors:   [main, accent, background] for the drawn preview.
-   NOTE: the projects below are SAMPLES. Replace them with your real work before you go live. */
+   colors:   [main, accent, background] for the drawn preview. */
 const PROJECTS = [
-  { title:"Savanna Lodge", category:"Websites", type:"web", layout:"l1", colors:["#0F6B4F","#FFC83D","#EAF4EF"], url:"",
-    desc:"Booking website for a safari lodge, with room galleries and online enquiries." },
-  { title:"FreshCart", category:"Mobile apps", type:"app", colors:["#E8452C","#FFC83D","#FDEDE8"], url:"",
-    desc:"Grocery ordering app with live delivery tracking and M-Pesa checkout." },
-  { title:"ClinicDesk", category:"Software", type:"soft", colors:["#2B3BE5","#FFC83D","#EEF0FB"], url:"",
-    desc:"Patient records, appointments and billing for a growing clinic." },
-  { title:"Mwangaza Academy", category:"Websites", type:"web", layout:"l2", colors:["#7A2FD0","#FFC83D","#F3ECFB"], url:"",
-    desc:"School website with news, admissions forms and a parents' portal." },
-  { title:"PayTrack", category:"Software", type:"soft", colors:["#0E1530","#1FB58F","#E9EDF5"], url:"",
-    desc:"Invoicing and payment tracking dashboard for small businesses." },
-  { title:"RideLink", category:"Mobile apps", type:"app", colors:["#0A84C6","#FFC83D","#E6F3FA"], url:"",
-    desc:"Ride booking app that connects riders and drivers in real time." },
-  { title:"Urban Threads", category:"Websites", type:"web", layout:"l3", colors:["#D6336C","#0E1530","#FCEAF1"], url:"",
-    desc:"Online fashion store with product filters and card or mobile payments." }
+  { title:"Landlord Pro", category:"Mobile apps", type:"app", colors:["#0F6B4F","#FFC83D","#EAF4EF"], url:"",
+    desc:"An app that helps landlords manage their properties and tenants." },
+  { title:"Student Tracking System", category:"Software", type:"soft", colors:["#2B3BE5","#FFC83D","#EEF0FB"], url:"",
+    desc:"A system for keeping track of students, their records and their progress." },
+  { title:"WiFi Billing System", category:"Software", type:"soft", colors:["#0E1530","#1FB58F","#E9EDF5"], url:"",
+    desc:"A billing system that helps a WiFi business manage its customers and payments." },
+  { title:"Hostel Management Software", category:"Software", type:"soft", colors:["#7A2FD0","#FFC83D","#F3ECFB"], url:"",
+    desc:"Software for running a hostel: rooms, tenants and rent in one place." },
+  { title:"Barbershop Website", category:"Websites", type:"web", layout:"l3", colors:["#22223B","#E0A526","#F1EFE9"], url:"",
+    desc:"A website that puts a barbershop online so customers can find it and get in touch." }
 ];
 /* ===================================================== */
 
 const waLink = msg => `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(msg)}`;
 
 /* ---------- preview drawings ---------- */
+const hostOf = p => p.url ? p.url.replace(/^https?:\/\//,"").replace(/\/$/,"") : p.title;
+
 function mockWeb(p, cls){
   const [a,b,c] = p.colors, l = p.layout || "l1";
   const nav = `<div class="nv"><span class="dot"></span><span class="ls"><span></span><span></span><span></span></span></div>`;
@@ -196,8 +199,7 @@ function mockWeb(p, cls){
   if(l==="l1") inner = `${nav}<div class="split"><div class="txt"><div class="ln big w80"></div><div class="ln big w60"></div><div class="ln w80"></div><div class="ln w60"></div><div class="pill"></div></div><div class="blk"></div></div>`;
   if(l==="l2") inner = `${nav}<div class="txt"><div class="ln big w80"></div><div class="ln big w40"></div><div class="ln w60"></div><div class="pill"></div></div><div class="tiles"><div></div><div></div><div></div></div>`;
   if(l==="l3") inner = `${nav}<div class="blk banner"></div><div class="tiles"><div></div><div></div><div></div></div>`;
-  const host = p.title.toLowerCase().replace(/[^a-z0-9]/g,"") + ".co.ke";
-  return `<div class="mock web ${l} ${cls||""}" style="--a:${a};--b:${b};--c:${c}"><div class="bar"><i></i><i></i><i></i><span class="url">${host}</span></div><div class="screen">${inner}</div></div>`;
+  return `<div class="mock web ${l} ${cls||""}" style="--a:${a};--b:${b};--c:${c}"><div class="bar"><i></i><i></i><i></i><span class="url">${esc(hostOf(p))}</span></div><div class="screen">${inner}</div></div>`;
 }
 function mockApp(p, cls){
   const [a,b,c] = p.colors;
@@ -208,9 +210,12 @@ function mockSoft(p, cls){
   const [a,b,c] = p.colors;
   const st = `<div><div class="ln"></div><div class="ln w60"></div></div>`;
   const bars = [40,65,50,80,60,92,70].map(h=>`<i style="height:${h}%"></i>`).join("");
-  return `<div class="mock soft ${cls||""}" style="--a:${a};--b:${b};--c:${c}"><div class="bar"><i></i><i></i><i></i><span class="url">app.${p.title.toLowerCase().replace(/[^a-z0-9]/g,"")}.com</span></div><div class="body"><div class="side"><span></span><span></span><span></span><span></span></div><div class="main"><div class="stats">${st}${st}${st}</div><div class="chart">${bars}</div></div></div></div>`;
+  return `<div class="mock soft ${cls||""}" style="--a:${a};--b:${b};--c:${c}"><div class="bar"><i></i><i></i><i></i><span class="url">${esc(hostOf(p))}</span></div><div class="body"><div class="side"><span></span><span></span><span></span><span></span></div><div class="main"><div class="stats">${st}${st}${st}</div><div class="chart">${bars}</div></div></div></div>`;
 }
 const drawMock = (p,cls) => p.type==="app" ? mockApp(p,cls) : p.type==="soft" ? mockSoft(p,cls) : mockWeb(p,cls);
+
+/* ---------- helpers ---------- */
+const esc = s => String(s).replace(/[&<>"]/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[ch]));
 
 /* ---------- hero stack ---------- */
 (function(){
@@ -221,7 +226,6 @@ const drawMock = (p,cls) => p.type==="app" ? mockApp(p,cls) : p.type==="soft" ? 
 })();
 
 /* ---------- gallery ---------- */
-const esc = s => String(s).replace(/[&<>"]/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[ch]));
 const grid = document.getElementById("grid");
 grid.innerHTML = PROJECTS.map((p,i)=>`
   <article class="card" data-cat="${esc(p.category)}">
