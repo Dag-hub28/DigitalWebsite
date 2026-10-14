@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact | Digital Website Ltd</title>
-<meta name="description" content="Contact Digital Website Ltd on WhatsApp, by phone or by email, or send a project request from this page.">
+<meta name="description" content="Contact Digital Website Ltd on WhatsApp, by phone or by email, or send a project request from this page. Open 24 hours, 7 days a week.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -116,18 +116,22 @@ nav.links a[aria-current="page"]{color:var(--ink)}
 <footer>
   <div class="wrap">
     <span>&copy; <span id="yr"></span> Digital Website Ltd. All rights reserved.</span>
-    <span>Websites, apps and software.</span>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </div>
 </footer>
 
 <script>
-/* EDIT: put your real details here. Use the same WhatsApp number as in index.html. */
 const SITE = {
-  whatsapp: "254700000000",            // digits only, with country code, no + or spaces
-  display: "+254 700 000 000",         // how the number is shown on the page
-  email: "hello@digitalwebsite.co.ke",
-  location: "Nairobi, Kenya",
-  hours: "Monday to Friday, 8:00 am to 6:00 pm"
+  whatsapp: "254748617268",
+  display: "+254 748 617 268",
+  email: "dauglasnyongesa1@gmail.com",
+  location: "Ngong, Kenya",
+  hours: "24 hours a day, 7 days a week"
 };
 
 const waLink = msg => "https://wa.me/" + SITE.whatsapp + "?text=" + encodeURIComponent(msg);
