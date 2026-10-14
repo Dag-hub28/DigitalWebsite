@@ -188,3 +188,14 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
   .stack .mock{animation:none}
   *{transition:none!important}
 }
+/* ---- Phone fixes ---- */
+nav.links a.btn-primary,nav.links a.btn-primary:hover{color:#fff}
+.logo{line-height:1.15}
+@media (max-width:900px){
+  .top .wrap{height:62px}
+  .logo{font-size:1rem}
+  .logo-mark{width:26px;height:26px}
+  .top .btn-sm{padding:8px 14px;font-size:.85rem;white-space:nowrap}
+  .wa-float{padding:10px 16px;font-size:.9rem;right:14px;bottom:14px}
+  footer{padding-bottom:84px}
+}
